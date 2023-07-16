@@ -10,8 +10,9 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/danger/swift.git", exact: "3.16.0"), // dev
-        .package(url: "https://github.com/f-meloni/danger-swift-coverage", exact: "1.2.1") // dev
-    ],
+        .package(url: "https://github.com/f-meloni/danger-swift-coverage", exact: "1.2.1"), // dev
+        .package(url: "git@github.com:mikeger/XcodeSelectiveTesting.git", exact: "0.6.1") // dev   
+    ],	
     targets: [
         .target(
             name: "DangerDependencies",
